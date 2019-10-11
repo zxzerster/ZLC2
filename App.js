@@ -7,28 +7,16 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 
-import MainTabs from './screens/MainTabs';
+import AppRoutes from './AppRoutes';
 
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+const App = () => {
+  return (
+    <>
+      <AppRoutes />
+    </>
+  );
+};
 
-const Tabs = createStackNavigator(
-  {
-    MainTabs: {screen: MainTabs},
-  },
-  {
-    mode: 'modal',
-    headerMode: 'none',
-  },
-);
-
-export default createAppContainer(Tabs);
+export default App;
