@@ -7,7 +7,13 @@
 import React, {Component} from 'react';
 import {Text, Button} from 'react-native';
 
-class Login extends Component<{}> {
+type Props = {
+  navigation: {
+    navigate: Function,
+  },
+};
+
+class Login extends Component<Props> {
   render() {
     return (
       <>

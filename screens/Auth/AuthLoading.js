@@ -7,7 +7,13 @@
 import React from 'react';
 import {ActivityIndicator, Text} from 'react-native';
 
-export default props => {
+type Props = {
+  navigation: {
+    navigate: Function,
+  },
+};
+
+export default (props: Props) => {
   setInterval(() => {
     props.navigation.navigate('AuthStack');
   }, 3000);
