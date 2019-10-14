@@ -9,9 +9,13 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
+import Playground from './network/Playground';
+
 import AppRoutes from './AppRoutes';
 
 const App = () => {
+  Playground();
+
   return (
     <>
       <AppRoutes />
