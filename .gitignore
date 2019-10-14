@@ -1,6 +1,7 @@
 # OSX
 #
 .DS_Store
+.flowconfig
 
 # Xcode
 #
@@ -57,6 +58,3 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
-
-# ignore flow version on local machines, due to I have different version of flow on my defferent machines
-.flowconfig
