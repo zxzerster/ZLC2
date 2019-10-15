@@ -7,16 +7,18 @@
  */
 
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView, Platform} from 'react-native';
 
 import AppRoutes from './AppRoutes';
 
 const App = () => {
-  return (
-    <>
-      <AppRoutes />
-    </>
-  );
+  const content = <AppRoutes />;
+
+  if (Platform.OS === 'ios') {
+    return <SafeAreaView>{content}</SafeAreaView>;
+  }
+
+  return <>{content}</>;
 };
 
 export default App;
