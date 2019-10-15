@@ -25,4 +25,16 @@ const container = createSwitchNavigator(
 
 const routes = createAppContainer(container);
 
+export const AppRoutes = {
+  AuthLoading: 'AuthLoading',
+  AuthStack: {
+    Login: 'Login',
+    Login2: 'Login2',
+  },
+  MainTabs: {
+    Tab1: 'Tab1',
+    Tab2: 'Tab2',
+  },
+};
+
 export default routes;

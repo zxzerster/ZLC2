@@ -7,6 +7,8 @@
 import React from 'react';
 import {ActivityIndicator, Text} from 'react-native';
 
+import {AppRoutes} from '../../AppRoutes'; 
+
 type Props = {
   navigation: {
     navigate: Function,
@@ -14,8 +16,8 @@ type Props = {
 };
 
 export default (props: Props) => {
-  setInterval(() => {
-    props.navigation.navigate('AuthStack');
+  setTimeout(() => {
+    props.navigation.navigate(AppRoutes.AuthStack.Login);
   }, 3000);
   return (
     <>
