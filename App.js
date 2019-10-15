@@ -15,7 +15,8 @@ const App = () => {
   const content = <AppRoutes />;
 
   if (Platform.OS === 'ios') {
-    return <SafeAreaView>{content}</SafeAreaView>;
+    // eslint-disable-next-line react-native/no-inline-styles
+    return <SafeAreaView style={{flex: 1}}>{content}</SafeAreaView>;
   }
 
   return <>{content}</>;
